@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="applovin_agree_message">アプリの使用を開始するために「次へ」をクリックしてください。</string>
+    <string name="applovin_continue_button_text">次へ</string>
+    <string name="applovin_gdpr_advertising_partners_screen_message">プライバシーポリシーで説明されているように、お客様の同意を得て、このデータを次のパートナーと共有し、パーソナライズド広告またはコンテンツを提供できるようにする場合があります。</string>
+    <string name="applovin_gdpr_advertising_partners_screen_title">パーソナライズド広告とコンテンツ</string>
+    <string name="applovin_gdpr_analytics_partners_screen_message">プライバシーポリシーで説明されているように、お客様の同意を得て、パフォーマンス測定とプロダクトおよびサービスの改善を支援するために、このデータを次のパートナーと共有する場合があります。</string>
+    <string name="applovin_gdpr_analytics_partners_screen_title">パフォーマンス測定とプロダクト開発</string>
+    <string name="applovin_gdpr_are_you_sure_screen_message">当社または当社のパートナーが、プライバシーポリシーに記載されているように、パーソナライズド広告やコンテンツ、およびその他の目的でこのデータを使用できるようにします。\n\n\u2022 より関連性の高いエクスペリエンス、パーソナライズド広告、コンテンツを提供します\n\n\u2022 プロダクトの改善と開発をサポートします\n\n\u2022 アプリ内のプロモーションに参加できます</string>
+    <string name="applovin_gdpr_are_you_sure_screen_title">確かですか？</string>
+    <string name="applovin_gdpr_back_button_text">戻る</string>
+    <string name="applovin_gdpr_learn_more_screen_bullet_1">当社のアプリを無料に保つのに役立ちます！</string>
+    <string name="applovin_gdpr_learn_more_screen_bullet_2">パーソナライズド広告やコンテンツなど、より関連性の高いエクスペリエンスを提供します</string>
+    <string name="applovin_gdpr_learn_more_screen_bullet_3">プロダクト改善と開発のサポートを支援します</string>
+    <string name="applovin_gdpr_learn_more_screen_bullet_4">アプリ内のプロモーションに参加できるようになります</string>
+    <string name="applovin_gdpr_learn_more_screen_message_1">当社のアプリをダウンロードしていただきありがとうございます！ 当社とパートナーがこのデータを使用できるようにすることで、以下のような独自のアプリ体験を作成できます。</string>
+    <string name="applovin_gdpr_learn_more_screen_message_2">選択は後からでも変更可能です。お客様がデータを共有しないと選択した場合でもアプリ内では広告表示はされます。 ただし、こちらの広告はお客様との関連性が低い場合があります。</string>
+    <string name="applovin_gdpr_main_screen_analytics_purposes_switch_text">パフォーマンス測定とプロダクト開発</string>
+    <string name="applovin_gdpr_main_screen_learn_more_button_text">さらに詳しく</string>
+    <string name="applovin_gdpr_main_screen_message">プライバシーポリシーで説明されているように、お客様の同意を得て、IPアドレスやデジタル識別子などのデバイスに関する特定の情報を収集させていただいております。 このデータにより、より関連性の高いパーソナライズド広告を提供させていただいております。\n\n以下では、当社または当社のパートナーが使用するデータをを選択できます。</string>
+    <string name="applovin_gdpr_main_screen_personalized_advertising_purposes_switch_text">パーソナライズド広告とコンテンツ</string>
+    <string name="applovin_gdpr_main_screen_privacy_policy_switch_text">16歳以上であり、プライバシーポリシーを読み、理解したことを同意します。</string>
+    <string name="applovin_gdpr_main_screen_title">%sをダウンロードしていただきありがとうございます！</string>
+    <string name="applovin_gdpr_understand_and_continue_button_text">理解し、同意します</string>
+    <string name="applovin_learn_more_screen_title">%sを無料で楽しめるよう、サポートをお願い致します！</string>
+    <string name="applovin_pp_and_tos_title">%s を使用するためには利用規約への同意およびプライバシーポリシーの確認が必要です。</string>
+    <string name="applovin_pp_title">%sを使用するためにはプライバシーポリシーを慎重に確認し、承認する必要があります。</string>
+    <string name="applovin_privacy_policy_text">プライバシーポリシー</string>
+    <string name="applovin_terms_of_service_text">利用規約</string>
+    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"有効にする"</string>
+    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g>の実行には、Google Play開発者サービスの有効化が必要です。"</string>
+    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Google Play開発者サービスの有効化"</string>
+    <string msgid="9115728400623041681" name="common_google_play_services_install_button">"インストール"</string>
+    <string msgid="8179894293032530091" name="common_google_play_services_install_text">"「<ns1:g id="APP_NAME">%1$s</ns1:g>」の実行には Google Play 開発者サービスが必要ですが、お使いのデバイスにはインストールされていません。"</string>
+    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Google Play開発者サービスの入手"</string>
+    <string msgid="4293541511340436975" name="common_google_play_services_notification_channel_name">"Google Play 開発者サービスの利用"</string>
+    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Google Play開発者サービスのエラー"</string>
+    <string name="common_google_play_services_unknown_issue">「%1$s」で Google Play 開発者サービスに問題が発生しています。もう一度お試しください。</string>
+    <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"「<ns1:g id="APP_NAME">%1$s</ns1:g>」の実行には Google Play 開発者サービスが必要ですが、お使いのデバイスではサポートされていません。"</string>
+    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"更新"</string>
+    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g>の実行にはGoogle Play開発者サービスの更新が必要です。"</string>
+    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Google Play開発者サービスの更新"</string>
+    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"<ns1:g id="APP_NAME">%1$s</ns1:g>の実行にはGoogle Play開発者サービスが必要ですが、このサービスは現在更新中です。"</string>
+    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"Google Play開発者サービスの新しいバージョンが必要です。まもなく自動更新されます。"</string>
+    <string msgid="5201977337835724196" name="common_open_on_phone">"スマートフォンで開く"</string>
+    <string msgid="3441753203274453993" name="common_signin_button_text">"ログイン"</string>
+    <string msgid="669893613918351210" name="common_signin_button_text_long">"Googleにログイン"</string>
+    <string name="exo_download_completed">ダウンロードが完了しました</string>
+    <string name="exo_download_description">ダウンロード</string>
+    <string name="exo_download_downloading">ダウンロードしています</string>
+    <string name="exo_download_failed">ダウンロードに失敗しました</string>
+    <string name="exo_download_notification_channel_name">ダウンロード</string>
+    <string name="exo_download_paused">ダウンロード一時停止</string>
+    <string name="exo_download_paused_for_network">ダウンロード停止: ネットワーク接続中</string>
+    <string name="exo_download_paused_for_wifi">ダウンロード停止: Wi-Fi 接続中</string>
+    <string name="exo_download_removing">ダウンロードを削除しています</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+</resources>

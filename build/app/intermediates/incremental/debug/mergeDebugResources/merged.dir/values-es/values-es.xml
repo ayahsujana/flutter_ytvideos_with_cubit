@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="applovin_agree_message">Por favor, presione \"Continuar\" si elige comenzar a usar nuestra aplicación.</string>
+    <string name="applovin_continue_button_text">Continuar</string>
+    <string name="applovin_gdpr_advertising_partners_screen_message">Como se explica en nuestra Políza de Privacidad, con su consentimiento, podemos compartir estos datos con los siguientes socios para permitirles publicar anuncios o contenido personalizados:</string>
+    <string name="applovin_gdpr_advertising_partners_screen_title">Anuncios y contenido personalizados</string>
+    <string name="applovin_gdpr_analytics_partners_screen_message">Como se explica en nuestra Políza de Privacidad, con su consentimiento, podemos compartir estos datos con los siguientes socios para ayudar a medir el rendimiento y mejorar nuestros productos y servicios:</string>
+    <string name="applovin_gdpr_analytics_partners_screen_title">Mediciones de rendimiento y desarrollo de productos</string>
+    <string name="applovin_gdpr_are_you_sure_screen_message">Permitirnos a nosotros y/o a nuestros socios usar estos datos para anuncios y contenido personalizados y otros propósitos, como se describe en nuestra Políza de Privacidad:\n\n\u2022 Le brinda una experiencia, anuncios, y contenido más personalizados\n\n\u2022 Ayuda a respaldar mejoras y desarrollos de productos\n\n\u2022 Te permite participar en promociones.</string>
+    <string name="applovin_gdpr_are_you_sure_screen_title">¿Estas seguro?</string>
+    <string name="applovin_gdpr_back_button_text">De vuelta</string>
+    <string name="applovin_gdpr_learn_more_screen_bullet_1">¡Ayudando a mantener nuestra aplicación gratis!</string>
+    <string name="applovin_gdpr_learn_more_screen_bullet_2">Dandote una experiencia más personal, incluidos anuncios y contenido personalizados</string>
+    <string name="applovin_gdpr_learn_more_screen_bullet_3">Ayudar a respaldar mejoras y desarrollos de productos</string>
+    <string name="applovin_gdpr_learn_more_screen_bullet_4">Permitirle participar en promociones</string>
+    <string name="applovin_gdpr_learn_more_screen_message_1">¡Gracias por descargar nuestra aplicación! Permitiéndo a nosotros y a nuestros socios, usar estos datos, nos ayuda a crear una experiencia de aplicación única, incluso al:</string>
+    <string name="applovin_gdpr_learn_more_screen_message_2">Siempre puede cambiar sus selecciones más adelante. Si elige no compartir sus datos, aún podrá acceder a la aplicación y seguirá recibiendo anuncios. Sin embargo, esos anuncios pueden ser menos relevantes para sus intereses.</string>
+    <string name="applovin_gdpr_main_screen_analytics_purposes_switch_text">Mediciones de rendimiento y desarrollo de productos.</string>
+    <string name="applovin_gdpr_main_screen_learn_more_button_text">Aprende más</string>
+    <string name="applovin_gdpr_main_screen_message">Como se explica en nuestra Políza de Privacidad, con su consentimiento, recopilamos cierta información sobre su dispositivo, como la dirección IP y los identificadores de publicidad. Estos datos nos permiten a nosotros y a nuestros socios ofrecer anuncios y contenido personalizados y realizar mejoras.\n\nA continuación, puede optar por permitirnos a nosotros y/o a nuestros socios utilizar estos datos para los siguientes propósitos:</string>
+    <string name="applovin_gdpr_main_screen_personalized_advertising_purposes_switch_text">Anuncios y contenido personalizados</string>
+    <string name="applovin_gdpr_main_screen_privacy_policy_switch_text">Certifico que soy mayor de dieciséis años y que he leído y entendido la Políza de Privacidad.</string>
+    <string name="applovin_gdpr_main_screen_title">¡Gracias por descargar \n%s!</string>
+    <string name="applovin_gdpr_understand_and_continue_button_text">Entiendo y confirmo</string>
+    <string name="applovin_learn_more_screen_title">¡Ayúdanos a mantener %s gratis y más divertido para ti!</string>
+    <string name="applovin_pp_and_tos_title">Para usar %s debe aceptar nuestros Términos y Condiciones Y afirmar que ha revisado nuestra Políza de Privacidad.</string>
+    <string name="applovin_pp_title">Para usar %s, debe afirmar que ha revisado y aceptado nuestra Políza de Privacidad. </string>
+    <string name="applovin_privacy_policy_text">Políza de Privacidad</string>
+    <string name="applovin_terms_of_service_text">Términos y Condiciones</string>
+    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Activar"</string>
+    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> no funcionará hasta que no habilites Servicios de Google Play."</string>
+    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Habilita Servicios de Google Play"</string>
+    <string msgid="9115728400623041681" name="common_google_play_services_install_button">"Instalar"</string>
+    <string msgid="8179894293032530091" name="common_google_play_services_install_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> no se ejecutará si los Servicios de Google Play no están instalados en tu dispositivo."</string>
+    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Descargar Servicios de Google Play"</string>
+    <string msgid="4293541511340436975" name="common_google_play_services_notification_channel_name">"Disponibilidad Servicios de Google Play"</string>
+    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Error de Servicios de Google Play"</string>
+    <string name="common_google_play_services_unknown_issue">La aplicación %1$s tiene problemas con los Servicios de Google Play. Vuelve a intentarlo.</string>
+    <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"No es posible ejecutar la aplicación <ns1:g id="APP_NAME">%1$s</ns1:g> sin los Servicios de Google Play, que no son compatibles con tu dispositivo."</string>
+    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"Actualizar"</string>
+    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> no funcionará hasta que no actualices Servicios de Google Play."</string>
+    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Actualiza Servicios de Google Play"</string>
+    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> no se ejecutará hasta que finalice la actualización en curso de Servicios de Google Play."</string>
+    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"Se necesita una nueva versión de Servicios de Google Play. Se actualizará en breve."</string>
+    <string msgid="5201977337835724196" name="common_open_on_phone">"Abrir en teléfono"</string>
+    <string msgid="3441753203274453993" name="common_signin_button_text">"Iniciar sesión"</string>
+    <string msgid="669893613918351210" name="common_signin_button_text_long">"Iniciar sesión con Google"</string>
+    <string name="exo_download_completed">Descarga de archivos completado</string>
+    <string name="exo_download_description">Descargar</string>
+    <string name="exo_download_downloading">Descargando</string>
+    <string name="exo_download_failed">No se ha podido descargar</string>
+    <string name="exo_download_notification_channel_name">Descargas</string>
+    <string name="exo_download_paused">Descargas pausadas</string>
+    <string name="exo_download_paused_for_network">Descargas en espera de red</string>
+    <string name="exo_download_paused_for_wifi">Descargas en espera de Wi-Fi</string>
+    <string name="exo_download_removing">Quitando descargas</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+</resources>

@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.sakuraschoolgames.sakuralifestoryschool.app-mergeDebugResources-15:/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\dedys\\.gradle\\caches\\transforms-3\\9ecc8676843a53b6173941cda60f51bf\\transformed\\jetified-applovin-sdk-11.9.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,134",
+                        "endColumns": "78,85",
+                        "endOffsets": "129,215"
+                    }
+                }
+            ]
+        }
+    ]
+}

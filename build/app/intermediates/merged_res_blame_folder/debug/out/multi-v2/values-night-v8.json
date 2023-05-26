@@ -1,0 +1,38 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.sakuraschoolgames.sakuralifestoryschool.app-mergeDebugResources-15:/values-night-v8/values-night-v8.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\dedys\\.gradle\\caches\\transforms-3\\9ecc8676843a53b6173941cda60f51bf\\transformed\\jetified-applovin-sdk-11.9.0\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,128,210",
+                        "endColumns": "72,81,71",
+                        "endOffsets": "123,205,277"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\dedys\\Documents\\ProjectApps\\sakuralifestoryschool\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "from": {
+                        "startLines": "3,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "175,831",
+                        "endLines": "7,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "482,997"
+                    },
+                    "to": {
+                        "startLines": "5,9",
+                        "startColumns": "4,4",
+                        "startOffsets": "282,463",
+                        "endLines": "8,11",
+                        "endColumns": "12,12",
+                        "endOffsets": "458,627"
+                    }
+                }
+            ]
+        }
+    ]
+}
