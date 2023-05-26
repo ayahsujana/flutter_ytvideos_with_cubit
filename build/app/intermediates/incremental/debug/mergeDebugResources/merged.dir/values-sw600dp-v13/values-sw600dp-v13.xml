@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="applovin_sdk_consentFlowGdprControlsViewHeight">150dp</dimen>
-    <dimen name="applovin_sdk_consentFlowGdprPartnersControlViewHeight">100dp</dimen>
-</resources>
