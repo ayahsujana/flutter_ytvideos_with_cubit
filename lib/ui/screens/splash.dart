@@ -13,25 +13,25 @@ class SplashScreen extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
           child: SizedBox(
-            height: Get.height,
-            width: Get.width,
-            child: Stack(
-              alignment: Alignment.center,
-              children: [
-                Image.asset(
-                  'assets/icons/logo.png',
-                  height: 200,
-                  width: 200,
-                ),
-                Positioned(
-                  bottom: 50,
-                  left: 0,
-                  right: 0,
-                  child: loadingSpinkit(),
-                ),
-              ],
+        height: Get.height,
+        width: Get.width,
+        child: Stack(
+          alignment: Alignment.center,
+          children: [
+            CircleAvatar(
+              radius: 111.0,
+              backgroundColor: Colors.green,
+              backgroundImage: AssetImage('assets/icons/logo.png'),
             ),
-          )),
+            Positioned(
+              bottom: 50,
+              left: 0,
+              right: 0,
+              child: loadingSpinkit(),
+            ),
+          ],
+        ),
+      )),
     );
   }
 }
