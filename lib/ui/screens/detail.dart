@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:sakuralifestoryschool/core/utils/ad_network.dart';
 import 'package:sakuralifestoryschool/ui/widgets/screen_widget.dart';
 
 import '../../core/cubit/detail/detail_cubit.dart';
@@ -15,26 +17,30 @@ class DetailScreen extends StatefulWidget {
 }
 
 class _DetailScreenState extends State<DetailScreen> {
+  AdNetworkAdmob admob = AdNetworkAdmob();
+
   @override
   void initState() {
     super.initState();
     context.read<DetailCubit>().explodeLink(Get.arguments);
+    admob.loadAdBanner();
     Screen.setPortrait();
   }
 
   @override
   void dispose() {
     super.dispose();
+    admob.bannerAd!.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SizedBox(
-        height: Get.height,
-        width: Get.width,
-        child: SafeArea(child: BlocBuilder<DetailCubit, DetailState>(
-          builder: (context, state) {
+      body: SafeArea(
+        child: SizedBox(
+          height: Get.height,
+          width: Get.width,
+          child: BlocBuilder<DetailCubit, DetailState>(builder: (context, state) {
             if (state is DetailLoading) {
               return loadingSpinkit();
             }
@@ -46,6 +52,7 @@ class _DetailScreenState extends State<DetailScreen> {
             if (state is DetailLoaded) {
               return DetailPage(
                 video: state.video,
+                bannerAd: admob.bannerAd,
               );
             }
             return Center(

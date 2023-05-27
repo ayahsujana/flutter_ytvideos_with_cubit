@@ -23,10 +23,8 @@ class ChannelPage extends StatelessWidget {
       itemBuilder: (context, index) {
         var ch = channel.channels[index];
         return InkWell(
-          onTap: () => Get.to(ChannelVideosScreen(), arguments: {
-            'channelId': ch.ids,
-            'nameChannel': ch.title
-          }),
+          onTap: () => Get.to(ChannelVideosScreen(),
+              arguments: {'channelId': ch.ids, 'nameChannel': ch.title}),
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Column(
@@ -40,7 +38,17 @@ class ChannelPage extends StatelessWidget {
                 SizedBox(
                   height: 16,
                 ),
-                Text(channel.channels[index].title, style: textStyle16(),)
+                Text(
+                  channel.channels[index].title,
+                  style: textStyle18(color: Colors.cyan),
+                ),
+                Text(
+                  channel.channels[index].description,
+                  maxLines: 5,
+                  overflow: TextOverflow.ellipsis,
+                  textAlign: TextAlign.center,
+                  style: textStyle11(),
+                ),
               ],
             ),
           ),

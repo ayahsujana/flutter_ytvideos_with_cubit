@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:sakuralifestoryschool/core/cubit/channel/channel_cubit.dart';
 import 'package:sakuralifestoryschool/core/cubit/detail/detail_cubit.dart';
 import 'package:sakuralifestoryschool/core/cubit/feed/feed_cubit.dart';
@@ -12,8 +13,9 @@ import 'package:http/http.dart' as http;
 import 'package:sakuralifestoryschool/ui/screens/splash.dart';
 import 'package:sakuralifestoryschool/ui/widgets/nav_bar_bottom_widget.dart';
 
-import 'ui/screens/root.dart';
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  MobileAds.instance.initialize();
   runApp(const MyApp());
 }
 

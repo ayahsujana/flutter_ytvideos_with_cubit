@@ -1,9 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    
     <application
         android:label="Sakura Life Story School"
         android:name="${applicationName}"
         android:usesCleartextTraffic="true"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -30,5 +32,10 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3486232454525684~7209972578"/>    
+        <meta-data android:name="applovin.sdk.key"
+            android:value="GTJdwqh11Ro1QX73zla-1XyWDMLNzUBoamBlttQEGcTynvdXhPiUBok1Mop2amrWsFv5LX-2ommyWpoS5DcZnM"/>    
     </application>
 </manifest>
