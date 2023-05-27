@@ -47,7 +47,7 @@ class RootScreen extends StatelessWidget {
                 )),
             sliderOpenSize: 250,
             slider: SliderView(
-              onItemClick: (title) {
+              onItemClick: () {
                 _key.currentState!.closeSlider();
               },
             ),
@@ -56,7 +56,7 @@ class RootScreen extends StatelessWidget {
         ),
         bottomNavigationBar: CustomBottomNavigationBar(
           backgroundColor: context.theme.scaffoldBackgroundColor,
-          itemColor: context.theme.colorScheme.secondary,
+          itemColor: Colors.pinkAccent,
           currentIndex: controller.currentIndex.value,
           onChange: (index) {
             controller.changePage(index);
@@ -91,7 +91,7 @@ class RootScreen extends StatelessWidget {
 
 class SliderView extends StatelessWidget {
   SliderView({Key? key, this.onItemClick});
-  final Function(String)? onItemClick;
+  final Function()? onItemClick;
 
   @override
   Widget build(BuildContext context) {
@@ -117,25 +117,30 @@ class SliderView extends StatelessWidget {
           ),
           Text(
             appName,
-            style: textStyle16(color:Colors.black),
+            style: textStyle16(color: Colors.black),
           ),
           SizedBox(
             height: 20,
           ),
           SliderMenuItem(
-              title: 'Home', iconData: Icons.home, onTap: onItemClick),
+              title: 'Home', iconData: Icons.home, onClick: onItemClick),
           SliderMenuItem(
               title: 'Privacy Policy',
               iconData: Icons.security,
-              onTap: onItemClick),
+              onClick: () =>
+                  getToLaunch('https://hayogo.my.id/privacy_policy.html')),
           SliderMenuItem(
               title: 'Give Rating',
               iconData: Icons.rate_review_outlined,
-              onTap: onItemClick),
+              onClick: () => rateUsNow),
           SliderMenuItem(
-              title: 'More App', iconData: Icons.favorite, onTap: onItemClick),
+              title: 'More App',
+              iconData: Icons.favorite,
+              onClick: () => getToLaunch('https://play.google.com/store/apps/developer?id=HaYoGo')),
           SliderMenuItem(
-              title: 'About', iconData: Icons.account_box, onTap: onItemClick),
+              title: 'About',
+              iconData: Icons.account_box,
+              onClick: () {}),
         ],
       ),
     );
@@ -145,21 +150,20 @@ class SliderView extends StatelessWidget {
 class SliderMenuItem extends StatelessWidget {
   final String title;
   final IconData iconData;
-  final Function(String)? onTap;
+  final Function()? onClick;
 
   const SliderMenuItem(
       {Key? key,
       required this.title,
       required this.iconData,
-      required this.onTap})
+      required this.onClick})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return ListTile(
-        title: Text(title,
-            style: textStyle14(color: Colors.black)),
+        title: Text(title, style: textStyle14(color: Colors.black)),
         leading: Icon(iconData, color: Colors.black),
-        onTap: () => onTap?.call(title));
+        onTap: onClick);
   }
 }

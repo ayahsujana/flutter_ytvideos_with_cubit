@@ -62,7 +62,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         titleBanner: 'Latest Story',
                         itemList: state.home.data[index].latest),
                     MostVideosPage(
-                        titleBanner: 'Most Story',
+                        titleBanner: 'Suggested for you',
                         itemList: state.home.data[index].most)
                   ],
                 );

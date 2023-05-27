@@ -19,31 +19,35 @@ class LatestVideosPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: ListView(
-        shrinkWrap: true,
-        physics: BouncingScrollPhysics(),
-        children: [
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 5.0),
-            child: Row(
-              children: [
-                Text(
-                  titleBanner,
-                  style: textStyle16(),
+    return ListView(
+      shrinkWrap: true,
+      physics: BouncingScrollPhysics(),
+      children: [
+        Padding(
+          padding: const EdgeInsets.only(bottom: 5, top: 25),
+          child: Row(
+            children: [
+              Container(
+                height: 28,
+                width: 128,
+                decoration: BoxDecoration(
+                  color: Colors.pinkAccent,
+                  borderRadius: BorderRadius.only(topRight: Radius.circular(8), bottomRight: Radius.circular(8))
                 ),
-                Spacer(),
-                TextButton(
-                    onPressed: () {},
-                    child: Text(
-                      'See More',
-                      style: textStyle16(color: Colors.cyan),
-                    ))
-              ],
-            ),
+                child: Padding(
+                  padding: const EdgeInsets.only(left:8.0),
+                  child: Text(
+                    titleBanner,
+                    style: textStyle18(color: Colors.white),
+                  ),
+                ),
+              ),
+            ],
           ),
-          ListView.builder(
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: ListView.builder(
               shrinkWrap: true,
               physics: BouncingScrollPhysics(),
               itemCount: itemList.length,
@@ -78,7 +82,7 @@ class LatestVideosPage extends StatelessWidget {
                                 Row(
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   mainAxisAlignment: MainAxisAlignment.start,
-
+        
                                   children: [
                                     Icon(Icons.person, size: 18,),
                                     SizedBox(
@@ -96,9 +100,9 @@ class LatestVideosPage extends StatelessWidget {
                     ),
                   ),
                 );
-              })
-        ],
-      ),
+              }),
+        )
+      ],
     );
   }
 }

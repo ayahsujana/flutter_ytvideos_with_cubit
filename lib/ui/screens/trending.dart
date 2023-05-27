@@ -45,6 +45,7 @@ class _TrendingOnScreenState extends State<TrendingOnScreen>
             flexibleSpace: TabBar(
                 onTap: changeTrendingState,
                 controller: _controller,
+                indicatorColor: Colors.pinkAccent,
                 tabs: [
                   Tab(
                     text: 'Trending',

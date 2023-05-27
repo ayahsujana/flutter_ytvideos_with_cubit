@@ -52,7 +52,7 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
               padding: EdgeInsets.only(left: 10, right: 10),
               margin: EdgeInsets.only(top: 10, bottom: 10),
               alignment: Alignment.center,
-              decoration: BoxDecoration(color: widget.currentIndex == index ? Colors.white.withOpacity(0.2) : Colors.transparent, borderRadius: BorderRadius.circular(10)),
+              decoration: BoxDecoration(color: widget.currentIndex == index ? Colors.pinkAccent : Colors.transparent, borderRadius: BorderRadius.circular(10)),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[

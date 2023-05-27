@@ -56,6 +56,7 @@ class ChannelPage extends StatelessWidget {
       },
       separatorBuilder: (context, index) => Divider(
         thickness: 2,
+        color: Colors.pinkAccent,
       ),
     );
   }

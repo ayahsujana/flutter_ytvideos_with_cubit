@@ -22,30 +22,33 @@ class MostVideosPage extends StatelessWidget {
     return SizedBox(
       height: 220,
       width: double.infinity,
-      child: Padding(
-        padding: EdgeInsets.all(8.0),
-        child: Column(
+      child: ListView(
+        children: [
+           Padding(
+        padding: const EdgeInsets.only(bottom: 10, top: 18),
+        child: Row(
           children: [
-            SizedBox(
-              height: 10,
-            ),
-            Padding(
-              padding: EdgeInsets.only(left:5.0),
-              child: Row(
-                children: [
-                  Text(
-                    titleBanner,
-                    style: textStyle16(),
-                  ),
-                  Spacer(),
-                  //TextButton(onPressed: () {}, child: Text('See More', style: textStyle16(color: Colors.cyan),))
-                ],
+            Container(
+              height: 28,
+              width: 175,
+              decoration: BoxDecoration(
+                color: Colors.pinkAccent,
+                borderRadius: BorderRadius.only(topRight: Radius.circular(8), bottomRight: Radius.circular(8))
+              ),
+              child: Padding(
+                padding: const EdgeInsets.only(left:8.0),
+                child: Text(
+                  titleBanner,
+                  style: textStyle18(color: Colors.white),
+                ),
               ),
             ),
-            SizedBox(
-              height: 10,
-            ),
-            SizedBox(
+          ],
+        ),
+      ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: SizedBox(
               height: 150,
               child: ListView.builder(
                   scrollDirection: Axis.horizontal,
@@ -80,9 +83,9 @@ class MostVideosPage extends StatelessWidget {
                       ),
                     );
                   }),
-            )
-          ],
-        ),
+            ),
+          )
+        ],
       ),
     );
   }

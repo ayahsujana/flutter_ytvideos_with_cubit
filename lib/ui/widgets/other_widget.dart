@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:in_app_review/in_app_review.dart';
 import 'package:share/share.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -53,6 +54,10 @@ Future<void> getToLaunch(String url) async {
 
 void shareTo(String text) {
   Share.share(text);
+}
+
+void rateUsNow() async {
+  await InAppReview.instance.openStoreListing();
 }
 
 TextStyle textStyle11({Color? color}) {
