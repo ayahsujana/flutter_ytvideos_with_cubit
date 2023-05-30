@@ -14,6 +14,8 @@ class ChannelCubit extends Cubit<ChannelState> {
 
   final ApiServices apiServices;
 
+  Future get getChannel => getChannels();
+
   Future<void> getChannels() async {
     try {
       emit(ChannelLoading());

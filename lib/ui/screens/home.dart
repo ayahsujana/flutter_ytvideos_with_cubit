@@ -18,11 +18,6 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  @override
-  void initState() {
-    super.initState();
-    context.read<HomeCubit>().getHomeVideos();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
         }
         if (state is HomeError) {
           return EmptyFailureNoInternetView(
-            image: 'lottie/empty_lottie.json',
+            image: 'assets/lottie/empty_lottie.json',
             title: 'Content unavailable',
             description: 'Please check your API!',
             buttonText: "Retry",

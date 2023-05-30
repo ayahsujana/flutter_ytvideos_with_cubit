@@ -15,6 +15,8 @@ class HomeCubit extends Cubit<HomeState> {
 
   final ApiServices apiServices;
 
+  Future get getVideo => getHomeVideos();
+
   Future<void> getHomeVideos() async {
     try {
       emit(HomeLoading());

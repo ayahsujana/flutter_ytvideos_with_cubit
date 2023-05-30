@@ -16,11 +16,6 @@ class ChannelScreen extends StatefulWidget {
 }
 
 class _ChannelScreenState extends State<ChannelScreen> {
-  @override
-  void initState() {
-    super.initState();
-    context.read<ChannelCubit>().getChannels();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +29,7 @@ class _ChannelScreenState extends State<ChannelScreen> {
           }
           if (state is ChannelError) {
             return EmptyFailureNoInternetView(
-              image: 'lottie/empty_lottie.json',
+              image: 'assets/lottie/empty_lottie.json',
               title: 'Content unavailable',
               description: 'Please check your API!',
               buttonText: "Retry",
@@ -43,8 +38,8 @@ class _ChannelScreenState extends State<ChannelScreen> {
           }
           if (state is ChannelLoaded) {
             return ListView.builder(
-              shrinkWrap: true,
-              physics: BouncingScrollPhysics(),
+                shrinkWrap: true,
+                physics: BouncingScrollPhysics(),
                 itemCount: state.channel.data.length,
                 itemBuilder: (context, index) {
                   return ChannelPage(channel: state.channel.data[index]);

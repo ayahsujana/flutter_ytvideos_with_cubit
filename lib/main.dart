@@ -9,7 +9,6 @@ import 'package:sakuralifestoryschool/core/cubit/home/home_cubit.dart';
 import 'package:sakuralifestoryschool/core/cubit/videos_channel/videos_channel_cubit.dart';
 import 'package:sakuralifestoryschool/core/services/remote_services.dart';
 import 'package:sakuralifestoryschool/core/utils/constant.dart';
-import 'package:http/http.dart' as http;
 import 'package:sakuralifestoryschool/ui/screens/splash.dart';
 import 'package:sakuralifestoryschool/ui/widgets/nav_bar_bottom_widget.dart';
 
@@ -26,9 +25,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider(create: ((context) => HomeCubit(ApiServices(client: http.Client())))),
-        BlocProvider(create: ((context) => FeedCubit(ApiServices(client: http.Client())))),
-        BlocProvider(create: ((context) => ChannelCubit(ApiServices(client: http.Client())))),
+        BlocProvider(create: ((context) => HomeCubit(ApiServices()))),
+        BlocProvider(create: ((context) => FeedCubit(ApiServices()))),
+        BlocProvider(create: ((context) => ChannelCubit(ApiServices()))),
         BlocProvider(create: ((context) => VideosChannelCubit())),
         BlocProvider(create: ((context) => DetailCubit())),
       ],

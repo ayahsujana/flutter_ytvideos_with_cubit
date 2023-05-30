@@ -8,10 +8,7 @@ import 'package:sakuralifestoryschool/core/models/video_channel.dart';
 import 'package:sakuralifestoryschool/core/network/rest_api.dart';
 
 class ApiServices {
-  final http.Client client;
-  ApiServices({
-    required this.client,
-  });
+  
 
   Map<String, String> header = {
     'x-identifier-app': ApiURL.appKey,
@@ -20,7 +17,7 @@ class ApiServices {
 
   Future<HomeModel> getHome() async {
     try {
-      final res = await client.get(Uri.parse(ApiURL.homeUrl), headers: header);
+      final res = await http.get(Uri.parse(ApiURL.homeUrl), headers: header);
       if (res.statusCode == 200) {
         return homeModelFromJson(res.body);
       } else {
@@ -33,7 +30,7 @@ class ApiServices {
 
   Future<FeedsModel> getFeed() async {
     try {
-      final res = await client.post(Uri.parse(ApiURL.feedsUrl), headers: header);
+      final res = await http.post(Uri.parse(ApiURL.feedsUrl), headers: header);
       if (res.statusCode == 200) {
         return feedsModelFromJson(res.body);
       } else {
@@ -47,7 +44,7 @@ class ApiServices {
   Future<ChannelModel> getChannel() async {
     try {
       final res =
-          await client.get(Uri.parse(ApiURL.channelUrl), headers: header);
+          await http.get(Uri.parse(ApiURL.channelUrl), headers: header);
       if (res.statusCode == 200) {
         return channelModelFromJson(res.body);
       } else {
@@ -61,7 +58,7 @@ class ApiServices {
   Future<VideosChannelModel> getMoreVideoChannel(
       String channelId, int page) async {
     try {
-      final res = await client.post(
+      final res = await http.post(
           Uri.parse('${ApiURL.moreChannelWithPage}$page'),
           body: {"channel_id": channelId},
           headers: header);

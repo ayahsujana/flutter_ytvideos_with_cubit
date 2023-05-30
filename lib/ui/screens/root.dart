@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_slider_drawer/flutter_slider_drawer.dart';
 import 'package:get/get.dart';
 import 'package:sakuralifestoryschool/ui/screens/search.dart';
 import 'package:sakuralifestoryschool/ui/widgets/other_widget.dart';
 
+import '../../core/cubit/channel/channel_cubit.dart';
+import '../../core/cubit/home/home_cubit.dart';
 import '../../core/utils/constant.dart';
 import 'channel.dart';
 import 'home.dart';
@@ -24,6 +27,13 @@ class _RootScreenState extends State<RootScreen> {
     ChannelScreen(),
     TrendingOnScreen(),
   ];
+
+  @override
+  void initState() {
+    super.initState();
+    context.read<ChannelCubit>().getChannel;
+    context.read<HomeCubit>().getVideo;
+  }
 
   @override
   Widget build(BuildContext context) {

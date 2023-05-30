@@ -30,12 +30,6 @@ class _TrendingOnScreenState extends State<TrendingOnScreen>
   }
 
   @override
-  void dispose() {
-    _controller!.dispose();
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
     progressPosition = MediaQuery.of(context).size.height / 0.5;
     return DefaultTabController(
