@@ -33,6 +33,7 @@ class MyApp extends StatelessWidget {
         BlocProvider(create: ((context) => DetailCubit())),
       ],
       child: GetMaterialApp(
+        debugShowCheckedModeBanner: false,
         title: appName,
         theme: ThemeData(
           brightness: Brightness.dark,

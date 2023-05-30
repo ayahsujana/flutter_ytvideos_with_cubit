@@ -1,6 +1,6 @@
 const String appName = 'Sakura School Story';
 
-const String admobBanner = '0';
+const String admobBanner = 'ca-app-pub-1/11';
 const String admobInters = '0';
 const String admobNative = '0';
 

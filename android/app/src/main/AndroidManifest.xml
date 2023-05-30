@@ -1,5 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     
     <application
         android:label="Sakura Life Story School"
@@ -34,7 +37,7 @@
             android:value="2" />
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="0"/>    
+            android:value="ca-app-pub-3486232454525684~7209972578"/>    
         <meta-data android:name="applovin.sdk.key"
             android:value="GTJdwqh11Ro1QX73zla-1XyWDMLNzUBoamBlttQEGcTynvdXhPiUBok1Mop2amrWsFv5LX-2ommyWpoS5DcZnM"/>    
     </application>

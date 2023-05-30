@@ -22,7 +22,7 @@ class _SearchPageState extends State<SearchPage> {
   List? contentList;
   bool isLoading = false;
   bool firstLoad = true;
-  //String API_KEY = "AIzaSyDM7KDDaD2pZ_m6V2w7waD8bu0yyiPCFDY";
+  String API_KEY = "AIzaSyCLLLyifMf-xaDD6P9bBIF5hO2HK3nZw7k";
 
   @override
   void initState() {
@@ -62,7 +62,10 @@ class _SearchPageState extends State<SearchPage> {
                 if (isLoading && index == contentList!.length - 1) {
                   return loadingSpinkit();
                 } else {
-                  return video(contentList![index]);
+                  if (contentList![index] is Video) {
+                    return video(contentList![index]);
+                  }
+                  return SizedBox();
                 }
               },
             ),
@@ -149,7 +152,7 @@ class _SearchPageState extends State<SearchPage> {
     setState(() {
       isLoading = true;
     });
-    List newList = await youtubeDataApi.fetchSearchVideo(query, '');
+    List newList = await youtubeDataApi.fetchSearchVideo(query, API_KEY);
     contentList!.addAll(newList);
     setState(() {
       isLoading = false;
